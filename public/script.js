@@ -84,7 +84,7 @@ function uploadFile(files) {
   xhr.addEventListener('readystatechange', function(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {
       console.log(xhr.response)
-      alert(serv+xhr.response)
+      alert(xhr.response)
       console.log("Done")
       // updateProgress(i, 100) // <- Add this
     }
